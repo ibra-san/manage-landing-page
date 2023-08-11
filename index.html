@@ -10,7 +10,52 @@
     <title>Manage Landing Page</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header class="primary-header">
+      <!-- Top of the page header is going to contain: 
+        1. The company logo and it links back to the home page / home section of the web page
+        2. The nav items (disappears into a menu on smaller screens)
+        3. Start here button
+      -->
+
+      <div class="container">
+          <a href="#"> <img src="/images/logo.svg" alt="Manage Company Landing Page" class="logo"></a>
+          <nav class="primary-nav">
+            <ul class="nav-list" role="list">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button">Get Started</button>
+      </div>
+
+      <!-- Main section is going to contain the rest of the page excluding the footer -->
+      <main>
+        <section>
+          <div class="container">
+            <div class="even-columns">
+              <div>
+                <h1 class="fs-primary-heading fw-bold">Bring everyone together to build better products.</h1>
+                <p>  Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+                <button class="button">Get Started</button>
+              </div>
+              <div>
+                <img src="images/illustration-intro.svg" alt="Platform chart styles and percentage representation illustration">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="even-columns"></div>
+          </div>
+        </section>
+      </main>
+    </header>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -19,8 +19,13 @@
 
       <div class="container">
           <a href="#"> <img src="/images/logo.svg" alt="Manage Company Landing Page" class="logo"></a>
-          <nav aria-label="primary" class="primary-nav">
-            <ul class="nav-list" role="list">
+          <button class="mobile-nav-toggle" aria-controls="primary navigation">
+            <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
+            <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-nav">
+            <ul class="nav-list" id="primary navigation" role="list">
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Product</a></li>
               <li><a href="#">About Us</a></li>

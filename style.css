@@ -138,6 +138,18 @@ picture {
 
 /* Utility classes */
 
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 
 /*----------------*/
 /* Text color */
@@ -253,7 +265,7 @@ body {
 
 /* button component*/
 
-button {
+.button {
   cursor: pointer; 
   text-decoration: none;
   border-radius: 100vmax;
@@ -267,19 +279,34 @@ button {
   box-shadow: 0 1.125em 1em -1em var(--clr-primary-500-red);
 }
 
-button[data-type = "inverted"] { 
+.button[data-type = "inverted"] { 
   background-color: var(--clr-neutral-100-gray);
   color: var(--clr-primary-400-red);
 }
 
 
-button:hover, 
-button:focus-visible { 
+.button:hover, 
+.button:focus-visible { 
   background-color: var(--clr-primary-300-red);
 }
 
-button[data-type = "inverted"]:hover, 
-button[data-type = "inverted"]:focus-visible { 
+.button[data-type = "inverted"]:hover, 
+.button[data-type = "inverted"]:focus-visible { 
   background-color: var(--clr-neutral-100-gray);
   color: var(--clr-primary-300-red);
 }
+
+
+/* Navigation */
+
+.mobile-nav-toggle { 
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0.5em;
+ }
+
+
+.mobile-nav-toggle .icon-close {
+    display: none;
+  }

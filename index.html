@@ -18,14 +18,15 @@
       -->
 
       <div class="container">
+        <div class="nav-wrapper">
           <a href="#"> <img src="/images/logo.svg" alt="Manage Company Landing Page" class="logo"></a>
-          <button class="mobile-nav-toggle" aria-controls="primary navigation">
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
             <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
             <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
             <span class="visually-hidden">Menu</span>
           </button>
-          <nav class="primary-nav">
-            <ul class="nav-list" id="primary navigation" role="list">
+          <nav class="primary-nav" id="primary-nav">
+            <ul class="nav-list" role="list">
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Product</a></li>
               <li><a href="#">About Us</a></li>
@@ -33,7 +34,8 @@
               <li><a href="#">Community</a></li>
             </ul>
           </nav>
-          <button class="button">Get Started</button>
+          <button class="button | display-sm-none display-md-inline-flex">Get Started</button>
+        </div>
       </div>
     </header>
 

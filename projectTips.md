@@ -27,3 +27,17 @@ Since we set the width of container to be max 1110, then when the screen hits a 
 
 
 }
+
+
+
+------------
+
+3. :where(.flow :not(:first-child)) { 
+  border: 2px solid green;
+}
+
+* The code above will select all the elements in an element except the first child. This is a utility class. The idea of a utility class is that its a general style that is added to other elements that use the class; however, the idea if there is a specific style you want to over right this class with, you should be capable of over writing that utility class easily. 
+
+* Using .flow :not(:first-child) is high specificity meaning over writing it will be a problem. Using :where(.flow :not(:first-child)) is lower specifictiy meaning you can over write it easily and that is what we want
+
+* You can also use .flow * + * (no spaces between the stars) to achieve the same thing as above.  

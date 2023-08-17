@@ -274,6 +274,31 @@ p[data-width="wide"] {
   }
 }
 
+/* Cta  --- -- -- -- -- -- -- -- - - - -*/
+
+.cta { 
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+}
+
+@media (min-width: 50em) { 
+  .cta { 
+    text-align: left;
+  }
+}
+
+.cta::before { 
+  content: '';
+  position: absolute; 
+  z-index: -1;
+  inset: 0;
+  background-image: url("images/bg-tablet-pattern.svg"), url("images/bg-tablet-pattern.svg");
+  background-position: -15rem -5rem, 80rem -42rem;
+  background-repeat: no-repeat;
+  opacity: 0.1 ;
+  
+}
 
 
 
@@ -315,6 +340,22 @@ p[data-width="wide"] {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+}
+
+.justify-self-end { 
+  justify-self: center;
+}
+
+.vertical-align-center { 
+  align-items: center;
+}
+
+
+@media (min-width: 50em) { 
+  .justify-self-end { 
+    justify-self: end;
+  }
+  
 }
 
 

@@ -41,3 +41,11 @@ Since we set the width of container to be max 1110, then when the screen hits a 
 * Using .flow :not(:first-child) is high specificity meaning over writing it will be a problem. Using :where(.flow :not(:first-child)) is lower specifictiy meaning you can over write it easily and that is what we want
 
 * You can also use .flow * + * (no spaces between the stars) to achieve the same thing as above.  
+
+
+---------------
+
+4. isolation: isolate; 
+
+This works well when you have the element in an absolute. Meaning its floating ontop of an relative element. The issue is if you give an element a negetive z index it will go behind the entire element and all of its styling. 
+Isolation: isolate, keeps styling ontop of the or confined within the relative element and not totally behind, meaning it will create a layer above the relative element styling, but not on top of the other elements
